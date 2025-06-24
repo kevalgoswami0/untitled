@@ -79,7 +79,7 @@ class HomePage extends StatelessWidget {
   Future<void> _signOut(BuildContext context) async {
     try {
       await FirebaseAuth.instance.signOut(); // Firebase sign out
-      await GoogleSignIn().signOut();         // Google sign out
+      await GoogleSignIn().signOut();         // Google sign out /// giyhub install karvanu plugind ma okddone have ene open karvanu search karine ek min new proj karu jo so ke ??haaaa
 
       // Go back to login/sign-in page
       Navigator.popUntil(context, (route) => route.isFirst);
